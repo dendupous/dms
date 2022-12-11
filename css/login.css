@@ -1,0 +1,66 @@
+#success_message{ display: none;}
+
+.login_background {
+    background: linear-gradient(270deg, #d9ed16, #d8872f, #2b8b86);
+    background-size: 600% 600%;
+
+    -webkit-animation: dmsbackground 37s ease infinite;
+    -moz-animation: dmsbackground 37s ease infinite;
+    animation: dmsbackground 37s ease infinite;
+}
+
+@-webkit-keyframes dmsbackground {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes dmsbackground {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes dmsbackground {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+/*.login_background{
+	background: url(../images/login_bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}*/
+.login_wrapper {
+	margin: 20% auto;
+	padding: 5px;
+	width: 60%;
+}
+@media (max-width: 768px) {
+    .login_wrapper {
+        width: 100%;
+    }
+}
+#nlcs_logo_header img{
+	width: 150px;
+}
+#nlcs_login_header h2{
+	margin: 0 0 15px 0;
+	color: #DEDEDE;
+	font-weight: 350;
+}
+.login_form_wrapper{
+	padding: 20px;
+	background: rgba(255, 255, 255, .8);
+	border: 10px solid rgba(4, 21, 31, .7);
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.center{
+	text-align: center;
+}
+
