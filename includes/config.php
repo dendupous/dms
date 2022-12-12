@@ -16,7 +16,7 @@
 	/* DATABASE SERVER CONFIGURATION */
 	define('DB_SERVER', 'localhost');
 	define('DB_USERNAME', 'root'); 
-	define('DB_PASSWORD', '');
+	define('DB_PASSWORD', 'root');
 	define('DB_DATABASE', 'dms_new');
 	define("BASE_URL", "http://localhost/dms/"); 
 	
@@ -88,10 +88,10 @@
 
 	
 	function getSMSDB(){
-		$dbhost2=DB2_SERVER;
-		$dbuser2=DB2_USERNAME;
-		$dbpass2=DB2_PASSWORD;
-		$dbname2=DB2_DATABASE;
+		// $dbhost2=DB2_SERVER;
+		// $dbuser2=DB2_USERNAME;
+		// $dbpass2=DB2_PASSWORD;
+		// $dbname2=DB2_DATABASE;
 		
 		try {
 			$dbConnection2 = new PDO("mysql:host=$dbhost2;dbname=$dbname2", $dbuser2, $dbpass2); 
