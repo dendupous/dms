@@ -27,12 +27,11 @@
 				<div class="col-lg-2 col-sm-0 col-xs-0"></div>
 				<div class="col-lg-8 col-sm-12 col-xs-12">
 					<div class="login_wrapper">
-						<div class="login_header">
+						<div class="login_form_wrapper">
+                            <div class="login_header">
 							<div id="nlcs_logo_header" class="text-center img-responsive"><img src="../images/dms_logo.png"></div>
 							<div id="nlcs_login_header" class="text-center"><h2></h2></div>
 						</div>
-						<div class="login_form_wrapper">
-							<h4 class="center"><strong>Document Management System</strong></h4>
 							<form class="form-horizontal" action="../includes/process.php" method="post" id="loginForm">
 								<div class="form-group">
 									<div class="col-md-12  inputGroupContainer">
@@ -70,6 +69,8 @@
 			</div>
 		</div>
 		
+
+
 		<script src="../js/jquery.min.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
 		<script src="../js/bootstrapvalidator.min.js"></script>

@@ -17,8 +17,8 @@
 	define('DB_SERVER', 'localhost');
 	define('DB_USERNAME', 'root'); 
 	define('DB_PASSWORD', 'root');
-	define('DB_DATABASE', 'dms_new');
-	define("BASE_URL", "http://localhost/dms/"); 
+	define('DB_DATABASE', 'desuung_dms_new');
+	define("BASE_URL", "https://dms.desuung.org.bt/"); 
 	
 	//SMS SERVER
 	define('SMS_SERVER', '');
@@ -28,7 +28,7 @@
 
 	/*GLOBAL MESSAGE*/
 	define('CS_FORWARD', 'You have pending task in DMS. Thank You'); 
-	define('DR_FORWARD', 'You have received a letter DMS. Thank You');
+	define('DR_FORWARD', 'You have received a letter in DMS. Thank You');
 	define('DR_COPY', 'You have received a copy(cc) in DMS. Thank You');
 	
 	/*FILE SIZE*/
@@ -87,20 +87,20 @@
 	}
 
 	
-	function getSMSDB(){
-		// $dbhost2=DB2_SERVER;
-		// $dbuser2=DB2_USERNAME;
-		// $dbpass2=DB2_PASSWORD;
-		// $dbname2=DB2_DATABASE;
+	// function getSMSDB(){
+	// 	$dbhost2=DB2_SERVER;
+	// 	$dbuser2=DB2_USERNAME;
+	// 	$dbpass2=DB2_PASSWORD;
+	// 	$dbname2=DB2_DATABASE;
 		
-		try {
-			$dbConnection2 = new PDO("mysql:host=$dbhost2;dbname=$dbname2", $dbuser2, $dbpass2); 
-			$dbConnection2->exec("set names utf8");
-			$dbConnection2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			return $dbConnection2;
-		}
-		catch (PDOException $e) {
-			echo 'Connection failed: ' . $e->getMessage();
-		}
-	}
+	// 	try {
+	// 		$dbConnection2 = new PDO("mysql:host=$dbhost2;dbname=$dbname2", $dbuser2, $dbpass2); 
+	// 		$dbConnection2->exec("set names utf8");
+	// 		$dbConnection2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	// 		return $dbConnection2;
+	// 	}
+	// 	catch (PDOException $e) {
+	// 		echo 'Connection failed: ' . $e->getMessage();
+	// 	}
+	// }
 ?>

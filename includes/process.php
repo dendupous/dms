@@ -49,7 +49,7 @@
 				'password' 	=>$userPassword
 			);
 			
-			$message = "Your new password is $password \nThank You.";
+			$message = "Your new password for my NLCS is $password \nThank You.";
 			$sendPassword = $generalClass->sendSMS($mobile, $message);
 			$saveuserPass = $generalClass->updateData(TBL_USER, $data, "WHERE id = '$userId'");
 
@@ -58,7 +58,7 @@
 			$url=BASE_URL.'auth/';
 			header("Location: $url");
 		}else{
-			$_SESSION['message'] = "This user do not exist in th system. Please check your mobile number or contact Administrator.";
+			$_SESSION['message'] = "This user do not exist in my NLCS. Please check your mobile number or contact Administrator.";
 			$_SESSION['type'] = "danger";
 			$url=BASE_URL.'auth/';
 			header("Location: $url");
