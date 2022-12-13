@@ -17,8 +17,8 @@
 	define('DB_SERVER', 'localhost');
 	define('DB_USERNAME', 'root'); 
 	define('DB_PASSWORD', 'root');
-	define('DB_DATABASE', 'desuung_dms_new');
-	define("BASE_URL", "https://dms.desuung.org.bt/"); 
+	define('DB_DATABASE', 'dms_new');
+	define("BASE_URL", "https://localhost/dms"); 
 	
 	//SMS SERVER
 	define('SMS_SERVER', '');
